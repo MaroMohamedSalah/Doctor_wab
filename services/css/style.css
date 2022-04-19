@@ -1,0 +1,237 @@
+/* set my colors  */
+:root{
+    --main-color : #04bbe7;
+    --socond-color: #e86781;
+    --font-color: #525e62;
+}
+/* no margin  */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+}
+/* my container */
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    position: relative;
+}
+/* style intro  */
+.intro h1{
+    font-weight: 500;
+    width: fit-content;
+}
+.intro h1:hover .doc{
+    color: var(--socond-color);
+}
+.intro h1:hover .web{
+    color: var(--main-color);
+}
+.intro a{
+    text-decoration: none;
+}
+/* style Doctor Web  */
+.doc{
+    color: var(--main-color);
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+.web{
+    color: var(--socond-color);
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+.intro .container{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-direction: row-reverse;
+}
+.intro{
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.intro img{
+    width: 489px;
+    margin-right: -44px;
+}
+
+.imag h1{
+    position: absolute;
+    top: 317px;
+    right: 114px;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.intro .title2 h2{
+    font-family: 'Square Peg', cursive;
+    font-size: 87px;
+    color: var(--main-color);
+}
+
+.intro .title2 h4{
+    color: #040b51;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: -68px;
+    padding: 10px;
+}
+
+.title .container{
+    display: flex;
+    justify-content: center;
+}
+
+.services .container{
+    position: relative;
+}
+
+.services{
+    color: var(--main-color);
+    font-weight: 600;
+    margin-bottom: 26px;
+    padding: 52px;
+}
+
+.icon{
+    position: absolute;
+    right: 0px;
+    top: 69px;
+    font-size: 33px;
+    color: var(--font-color);
+}
+
+.main .container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 30px 30px;
+}
+
+.card{
+    height: 40vh;
+    width: 47vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, var(--main-color), lightblue);
+    border: none;
+    border-radius: 27px;
+    position: relative;
+    margin: 36px auto;
+    transition: all 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 181px;
+}
+
+.card .serv{
+    font-size: 101px;
+}
+
+.card .dis{
+    height: 20%;
+    background-color: var(--socond-color);
+    width: inherit;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 27px;
+    color: var(--font-color);
+    font-weight: 600;
+    transition: all 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+#pharm,
+#check,
+#med{
+    opacity: 0;
+    transition: all 2s;
+    transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1)
+}
+#store,
+#def,
+#obb{
+    opacity: 0;
+    transition: all 2s;
+    transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1)
+}
+#virus,
+#chat{
+    opacity: 0;
+    transition: all 2s;
+    transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1)
+}
+.card:hover .dis{
+    height: 100%;
+    background: linear-gradient(to bottom right, var(--socond-color), lightblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card .dis h2{
+    font-weight: 500;
+}
+.card .dis h4 {
+    text-align: center;
+    font-weight: 400;
+    margin: 20px auto;
+    width: 85%;
+}
+.card .dis button{
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    display: block;
+    margin-top: 10px;
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    height: 10%;
+    width: 30%;
+    
+}
+.card .dis button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+#toTop1{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: var(--socond-color);
+    font-size: 60px;
+    transition: 0.6s;
+    transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+    display: none;
+    z-index: 1;
+}
+#toTop1:hover{
+    font-size: 65px;
+    bottom: 40px;
+    cursor: pointer;
+}
