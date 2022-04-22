@@ -38,7 +38,7 @@ virus.onclick = function (){
 // chat
 let chat = document.getElementById("chat");
 chat.onclick = function (){
-    location.href="#"
+    location.href="../chat/index.html"
 }
 
 // cards animation 
