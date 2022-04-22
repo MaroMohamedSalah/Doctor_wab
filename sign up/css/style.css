@@ -140,3 +140,25 @@ img{
 .audios{
   display: none;
 }
+.req::after{
+  content: "*";
+  position: absolute;
+  color: var(--socond-color);
+  padding-left: 4px;
+}
+.pass{
+  position: relative;
+}
+.pass #show , .pass #nshow{
+  position: absolute;
+  right: 141px;
+  bottom: 12px;
+  color: var(--font-color);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  height: 41%;
+}
+.pass #show{
+  display: none;
+}
