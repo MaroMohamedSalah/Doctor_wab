@@ -43,11 +43,11 @@
                         controls></audio>
                 </div>
                 <div class="fname">
-                    <label for="fname">First Name</label>
+                    <label for="fname" class="req">First Name</label>
                     <input id="fname" type="text" required name="fname">
                 </div>
                 <div class="name2">
-                    <label for="fname">Last Name</label>
+                    <label for="fname" class="req">Last Name</label>
                     <input id="lname" type="text" required name="fname">
                 </div>
                 <div class="phone">
@@ -55,16 +55,19 @@
                     <input type="tel" name="phone">
                 </div>
                 <div class="mail">
-                    <label for="mail">E-mail</label>
+                    <label for="mail" class="req">E-mail</label>
                     <input type="email" name="mail" required>
                 </div>
                 <div class="pass">
-                    <label for="pass">Password</label>
-                    <input type="password" name="pass" required>
+                    <label for="pass" class="req">Password</label>
+                    <input id="pass" minlength="10" type="password" name="pass" required>
+                    <button type="button" id="show"><i class="fa-solid fa-eye"></i></button>
+                    <button type="button" id="nshow"><i class="fa-solid fa-eye-low-vision"></i></button>
+
                 </div>
                 <div class="cpass">
-                    <label for="cpass">Confirm Password</label>
-                    <input type="password" name="cpass" required>
+                    <label for="cpass" class="req">Confirm Password</label>
+                    <input id="cpass" min="10" type="password" name="cpass" required>
                 </div>
                 <div class="confirm">
                     <div class="one">
