@@ -48,6 +48,9 @@ pass.onblur = function(){
         pass1[i] = x[i] 
     }
 }
+let ch=0;
+let audio3 = document.getElementById("a3")
+let audio4 = document.getElementById("a4")
 cpass.onblur = function(){
     let y = cpass.value;
     for(let i=0;i<y.length;i++){
@@ -57,12 +60,54 @@ cpass.onblur = function(){
     console.log(pass2);
     for(let i=0;i<y.length;i++){
         if(pass1.length != pass2.length){
-            window.alert("password and Confirm password must be the same !");
+            ch++;
+            // ch++;
+            console.log(ch);
+            if(ch===1){
+                console.log("clecked 1 times")
+                window.alert("password and Confirm password must be the same !");
+            }else if(ch===2){
+                console.log("clecked 2 times")
+                window.alert("يا حلو يا جميل");
+                audio3.play();
+            }else if(ch===3){
+                console.log("clecked 3 times")
+                window.alert("يلاااهوي");
+                audio4.play();
+            }else{
+                window.alert("password and Confirm password must be the same !");
+            }
             break;
         }
         else if(pass1[i]!==pass2[i]){
-            window.alert("password and Confirm password must be the same !");
+            ch++;
+            // ch++;
+            console.log(ch);
+            if(ch===1){
+                console.log("clecked 1 times")
+                window.alert("password and Confirm password must be the same !");
+            }else if(ch===2){
+                audio3.play();
+                console.log("clecked 2 times")
+                window.alert("يا حلو يا جميل");
+            }else if(ch===3){
+                console.log("clecked 3 times")
+                window.alert("يلاااهوي");
+                audio4.play();
+            }else{
+                window.alert("password and Confirm password must be the same !");
+            }
             break;
         }
     }
 }
+
+// let test = document.getElementById("test");
+// let ch=0;
+// test.onclick = function(){
+//     console.log(ch)
+//     ch++;
+//     if(ch===3){
+//         console.log("clicked 3 times")
+//     }
+// }

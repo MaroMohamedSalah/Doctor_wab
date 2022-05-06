@@ -177,7 +177,8 @@ html{
     transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1)
 }
 #virus,
-#chat{
+#chat,
+#near{
     opacity: 0;
     transition: all 2s;
     transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1)
@@ -211,13 +212,18 @@ html{
     background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
     height: 10%;
     width: 30%;
-    
+    border: var(--font-color) 2px solid;
+    outline: none;
 }
 .card .dis button:hover {
     background-position: right center;
     color: #fff;
     text-decoration: none;
     cursor: pointer;
+
+}
+.card i{
+    color: var(--font-color);
 }
 #toTop1{
     position: fixed;

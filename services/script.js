@@ -8,7 +8,7 @@ pharm.onclick = function (){
 // Chck Your Health
 let check = document.getElementById("check");
 check.onclick = function (){
-    location.href="#"
+    location.href="../services/check your health/index.html"
 }
 // Mediaction Guide
 let med = document.getElementById("med");
@@ -38,9 +38,13 @@ virus.onclick = function (){
 // chat
 let chat = document.getElementById("chat");
 chat.onclick = function (){
-    location.href="../chat/index.html"
+    location.href="../services/chat/index.html"
 }
-
+//near
+let near = document.getElementById("near");
+near.onclick = function (){
+    location.href="../near me/services.html"
+}
 // cards animation 
 window.onscroll = function () {
     if(window.scrollY < 550){ //default
@@ -76,6 +80,7 @@ window.onscroll = function () {
             obb.style.opacity='0';
             virus.style.opacity='1';
             chat.style.opacity='1';
+            near.style.opacity='1';
         }
         };
 
@@ -176,20 +181,15 @@ window.onscroll = function () {
         chat.onmouseleave = function (){
             dis8.textContent = "Chat"
         }
-        // //create "go to top" btn
-        // let toTop1 = document.getElementById("toTop1");
-        // window.onscroll = function () {
-        //   if (window.scrollY >= 600) {
-        //     toTop1.style.display = "block";
-        //   } else {
-        //     toTop1.style.display = "none";
-        //   }
-        // };
-        
-        // toTop1.onclick = function (){
-        //         window.scrollTo({
-        //                 top : 0 ,
-        //                 left : 0,
-        //                 behavior : "smooth"
-        //         })
-        // }
+        // near
+        let dis9 = document.getElementById("dis9");
+        near.onmouseenter = function(){
+            dis9.innerHTML =  `
+            <h2>Near Me</h2>
+            <h4>Talk to your doctor and check on your health</h4>
+            <button id="btn">click me</button>
+            `
+        }
+        near.onmouseleave = function (){
+            dis9.textContent = "Near Me"
+        }

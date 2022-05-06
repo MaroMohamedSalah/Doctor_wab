@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blood Pressure</title>
+    <!-- link to style  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- link to normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,900;1,200;1,300;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+    <!-- add awsome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- change tab img -->
+    <link class="tab" rel="icon" href="../check your health/image/bed-pulse-solid.svg" />
+    <!-- style print  -->
+    <link rel="stylesheet" media="print" href="print.css" />
+</head>
+
+<body>
+    <!-- Start nav bar -->
+    <div class="nav">
+        <div class="container">
+            <h1><a href="../../Landing bage/index.html"><span class="doc">Doctor</span><span class="web">Web</span></a>
+            </h1>
+            <div class="icon">
+                <i class="fa-solid fa-bed-pulse"></i>
+            </div>
+        </div>
+    </div>
+    <!-- End nav bar -->
+    <!-- Start title and video  -->
+    <div class="intro2">
+        <div class="container">
+            <h1>Blood Pressure</h1>
+            <h3>Watch this video to learn how to measure blood pressure correctly <span><i
+                        class="fa-solid fa-circle-arrow-down"></i></span></h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iTapvWBwrz8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <!-- End title and video  -->
+    <!-- Start device  -->
+    <div class="dv">
+        <div class="container">
+            <div class="sec1">
+                <img src="../check your health/image/HTB1OL9VKVXXXXXQXXXXq6xXFXXXf copy.jpg" alt="">
+                <input id="sys" value="120" type="number" minlength="2">
+                <input id="dia" value="70" type="number">
+                <button id="btn1" title="reset"></button>
+                <button id="btn2" title="submit"></button>
+            </div>
+            <div class="sec2">
+                <label for="age">Your age: </label>
+                <input id="age" value="18" type="number" name="age" required>
+                <fieldset id="status">
+                    <legend>your blood pressure is </legend>
+                    <h1 id="re">your status will display here</h1>
+                </fieldset>
+            </div>
+
+            <button id="print_icon"><i class="fa-solid fa-print"></i></button>
+        </div>
+    </div>
+    <!-- End device  -->
+    <!-- start return to servesis  -->
+    <div class="return" id="return">
+        <i class="fa-solid fa-angles-left"></i>
+
+        <h2 id="back">Go BACK</h2>
+    </div>
+    <!-- end return to servesis  -->
+    <!-- start print  -->
+    <div class="print">
+        <div class="doctor" id="doctor">
+        </div>
+    </div>
+    <!-- end print  -->
+    <script src="../check your health/script2.js"></script>
+</body>
+
+</html>

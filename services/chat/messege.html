@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send a messege</title>
+    <!-- link to style  -->
+    <link rel="stylesheet" href="../chat/css/style.css">
+    <!-- link to normalize -->
+    <link rel="stylesheet" href="../sign up/css/normalize.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,900;1,200;1,300;1,700&display=swap"
+        rel="stylesheet">
+    <!-- add awsome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="../sign up/css/all.min.css">
+    <!-- change tab img -->
+    <link rel="icon" href="../chat/image/comment-medical-solid.svg">
+</head>
+
+<body>
+    <!-- Start form  -->
+    <div class="form">
+        <div class="container">
+            <fieldset>
+                <legend>Sent A Messege </legend>
+                <form action="../chat/index.html">
+                    <div class="name">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="birth">
+                        <label for="birth">Birthday</label>
+                        <input type="date" name="birth" required>
+                    </div>
+                    <div class="co">
+                        <label for="co">Complaint Type</label>
+                        <input type="text" name="co" required>
+                    </div>
+                    <div class="ms">
+                        <label for="ms">Your Messege</label>
+                        <textarea required name="ms" placeholder="Type your messeg" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="sub">
+                        <input type="submit" value="Sent!">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+    <!-- End form  -->
+</body>
+
+</html>
