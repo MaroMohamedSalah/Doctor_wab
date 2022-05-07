@@ -3,7 +3,7 @@
 // Pharmacies
 let pharm = document.getElementById("pharm");
 pharm.onclick = function (){
-    location.href="#"
+    location.href="https://github.com/mohamedhesham5200/pharmacy"
 }
 // Chck Your Health
 let check = document.getElementById("check");
@@ -43,7 +43,7 @@ chat.onclick = function (){
 //near
 let near = document.getElementById("near");
 near.onclick = function (){
-    location.href="../near me/services.html"
+    location.href="https://mahmoud7732.github.io/mahmoudproject.github.io/near-me.html"
 }
 // cards animation 
 window.onscroll = function () {
