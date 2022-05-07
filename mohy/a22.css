@@ -1,0 +1,25 @@
+*{
+    margin-top: 13px;
+}
+body{
+    background-image: url(WhatsApp\ Image\ 2022-05-07\ at\ 8.23.08\ PM.jpeg);
+    background-size: cover;
+    color: #060607;
+ display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    color: #152c8a;
+
+}
+th{
+    background-color:rgb(5, 5, 230);
+    color: white;
+}
+table{
+    border-color:antiquewhite ;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Application Form</title>
+    <link rel="stylesheet" href="a11.css">
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <div class="af">
+        <h1>Application Form</h1>
+        <form method="post">
+            <div>
+                <label for="fname">First name </label>
+                <br> <br>
+                <input id="fname" type="text" required placeholder="First name" autofocus>
+            </div>
+            <div>
+                <br>
+                <label for="sname">Second name</label>
+                <br> <br>
+                <input id="sname" type="text" required placeholder="Second name">
+            </div>
+            <div>
+                <p>Gender</p>
+                <input type="radio" id="m" name="Gender" value="Male" required>
+                <label for="m">Male</label>
+            </div>
+            <div>
+                <input type="radio" id="fm" name="Gender" value="Female" required>
+                <label for="fm">Female</label>
+            </div>
+            <div>
+                <label for="pn">Phone number</label>
+                <br><br>
+                <input id="pn" type="number" required placeholder="Phone number">
+            </div>
+            <div>
+                <br>
+                <label for="email">Email</label>
+                <br><br>
+                <input id="email" type="email" required placeholder="username@example.com">
+            </div>
+            <div>
+                <br>
+                <label for="dob ">Date of birth</label>
+                <br><br>
+                <input type="date" required>
+            </div>
+            <div>
+                <p>What is your employment status </p>
+                <input id="st" type="radio" name="employment statud" value="Student" required>
+                <label for="st">Student</label>
+            </div>
+            <div>
+                <input id="ue" type="radio" name="employment statud" value="Unemployed" required>
+                <label for="ue">Unemployed</label>
+            </div>
+            <div>
+                <input id="em" type="radio" name="employment statud" value="employee" required>
+                <label for="em">employee</label>
+            </div>
+            <div>
+                <label for="Specialties">Chosse your specialty</label>
+                <select name="Specialties" id="Specialties">
+                    <option value="Dentistry">Dentistry</option>
+                    <option value="Dermatology">Dermatology</option>
+                    <option value="Ear, nose and throat">Ear, nose and throat</option>
+                    <option value="Endocrinology">Endocrinology</option>
+                    <option value="Gastroenterology">Gastroenterology</option>
+                    <option value="General surgery">General surgery</option>
+                    <option value="Hematology">Hematology</option>
+                    <option value="Hepatology">Hepatology</option>
+                    <option value="Anatomy">Anatomy</option>
+                    <option value="Anesthesia">Anesthesia</option>
+                    <option value="Internal Medicine">Internal Medicine</option>
+                </select>
+                <br><br>
+            </div>
+            <div>
+                <input type="reset" value="Empty">
+                <input type="submit" value="Send">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

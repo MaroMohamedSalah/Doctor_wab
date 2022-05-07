@@ -13,7 +13,7 @@ check.onclick = function (){
 // Mediaction Guide
 let med = document.getElementById("med");
 med.onclick = function (){
-    location.href="#"
+    location.href="../Medication Guide/index.html"
 }
 // store
 let store = document.getElementById("store");
@@ -28,7 +28,7 @@ def.onclick = function (){
 // Medical obbreviations
 let obb = document.getElementById("obb");
 obb.onclick = function (){
-    location.href="#"
+    location.href="../mohy/web doctor2.html"
 }
 // Viruses and Epidemics
 let virus = document.getElementById("virus");
