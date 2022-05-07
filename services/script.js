@@ -186,7 +186,7 @@ window.onscroll = function () {
         near.onmouseenter = function(){
             dis9.innerHTML =  `
             <h2>Near Me</h2>
-            <h4>Talk to your doctor and check on your health</h4>
+            <h4>We believe that communication belongs to everyone—it should be as free and flexible as we all are</h4>
             <button id="btn">click me</button>
             `
         }
