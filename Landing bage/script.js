@@ -15,21 +15,21 @@ white.onclick = function(){
 // go to sign up
 let btn1 = document.getElementById("btn1");
 btn1.onclick =  function (){
-        location.href="../sign up/index.html"
+        location.href="sign up/index.html"
 }
 // go to "Explore our services"
 let btn2 = document.getElementById("btn2");
 btn2.onclick =  function (){
-        location.href="../services/index.html"
+        location.href="services/index.html"
 }
 let btn3 = document.getElementById("btn3");
 btn3.onclick =  function (){
-        location.href="../services/index.html"
+        location.href="services/index.html"
 }
 //go to more qustions
 let btn4 = document.getElementById("btn4");
 btn4.onclick =  function (){
-        location.href="../contact us/contact_us.html"
+        location.href="https://mahmoud7732.github.io/mahmoudproject.github.io/contact_us.html"
 }
 btn4.onmouseenter =  function (){
         btn4.textContent = "Contact Us"
