@@ -33,7 +33,7 @@ obb.onclick = function (){
 // Viruses and Epidemics
 let virus = document.getElementById("virus");
 virus.onclick = function (){
-    location.href="#"
+    location.href="../services/virus/index.html"
 }
 // chat
 let chat = document.getElementById("chat");

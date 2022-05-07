@@ -1,0 +1,176 @@
+/* set my colors  */
+:root{
+    --main-color : #04bbe7;
+    --socond-color: #e86781;
+    --font-color: #525e62;
+}
+/* no margin  */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+}
+/* my container */
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    position: relative;
+}
+.nav{
+    background-color: #323232;
+}
+.nav h1{
+    font-weight: 500;
+    z-index: 1;
+}
+.nav h1:hover .doc,
+.introCard .pop .doc{
+    color: var(--socond-color);
+}
+.nav h1:hover .web,
+.introCard .pop .web{
+    color: var(--main-color);
+}
+
+.nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav a{
+    text-decoration: none;
+}
+
+.doc{
+    color: var(--main-color);
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    z-index: 1;
+}
+.web{
+    margin-right: 9px;
+    color: var(--socond-color);
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    z-index: 1;
+}
+.nav .container .icon{
+    font-size: 49px;
+    color: var(--socond-color);
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+}
+.nav .container .icon i{
+    transition: all 1s ease-in-out;
+}
+.nav .container .icon:hover i{
+    transform: rotate3d(0, 1, 0, 1turn);
+    perspective: 6px;
+}
+.nav .container i{
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.intro{
+    height: 85vh;
+    background-image: url(../image/symbology-blog-banner.png);
+    user-select: auto;
+    background-color: #000;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 60vh;
+    min-height: 339px;
+    -webkit-transition: background-image 3s;
+    transition: background-image 3s;
+    margin-top: -21px;
+}
+
+.intro .container h1{
+    text-align: center;
+    color: var(--main-color);
+    font-weight: 500;
+    position: relative;
+    top: -63px;
+}
+.main .container{
+    display: flex;
+    justify-content: center;
+}
+.introCard{
+    background-color: white;
+    width: 705px;
+    height: 335px;
+    position: relative;
+    top: -111px;
+}
+.introCard h1{
+    padding: 20px;
+    text-align: center;
+    font-size: 46px;
+    font-weight: 500;
+    color: var(--font-color);
+}
+.introCard .pop{
+    position: absolute;
+    top: -46.5px;
+    background-color: var(--font-color);
+    height: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--socond-color);
+    font-size: 19px;
+    font-weight: 400;
+    padding: 11px;
+}
+a{
+    text-decoration: none;
+}
+.virusesCards{
+    margin-top: -49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    width: 200px;
+    height: 500px;
+}
+.icon2{
+    width: 240px;
+    height: 251px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icon2 h1{
+    color: var(--socond-color);
+    font-size: 48px;
+    font-weight: 600;
+}
+.icon2 h3{
+    color: var(--font-color);
+    font-size: 29px;
+    font-weight: 600;
+}
+.icon2 span{
+    color: var(--socond-color);
+    font-weight: 300;
+}
+.icon2 img{
+    border-radius: 13px;
+}
