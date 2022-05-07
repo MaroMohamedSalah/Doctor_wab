@@ -3,7 +3,7 @@
 // Pharmacies
 let pharm = document.getElementById("pharm");
 pharm.onclick = function (){
-    location.href="https://github.com/mohamedhesham5200/pharmacy"
+    location.href="https://mohamedhesham5200.github.io/pharma/"
 }
 // Chck Your Health
 let check = document.getElementById("check");
