@@ -1,0 +1,89 @@
+/* set my colors  */
+:root{
+    --main-color : #04bbe7;
+    --socond-color: #e86781;
+    --font-color: #525e62;
+}
+/* no margin  */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+}
+/* my container */
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    position: relative;
+}
+/* caption{
+    color: var(--main-color);
+    background-color: var(--socond-color);
+} */
+.welcome{
+    background-color: var(--main-color);
+    text-align: center;
+    color: white;
+}
+.intro{
+
+    font-size: 24px;
+    color: var(--socond-color);
+
+}
+.intro span{
+    color: var(--main-color);
+    font-size: 30px;
+}
+table{
+    border: 2px solid;
+    border-collapse: collapse;
+	color:black;
+}
+th,td{
+    border:1px solid;
+    padding: 5rem;
+	
+}
+caption{
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0 20px 0;
+	font-size:25px;
+}
+thead{
+    background: var(--font-color);
+    color: #fff;
+}
+tbody:nth-child(even){
+    background-color:#f2f2f2;
+}
+span{
+    font-size: 60px;
+	color:black;
+}
+ul{
+    color:var(--socond-color);
+}
+td{
+    color: var(--main-color);
+}
+div{
+    overflow: auto;
+    text-align: center;
+}
+.X{
+    color: var(--font-color);
+}
+.y{
+	color: black;
+	font-size:20px;
+}

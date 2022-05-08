@@ -18,14 +18,14 @@ med.onclick = function (){
 // store
 let store = document.getElementById("store");
 store.onclick = function (){
-    location.href="#"
+    location.href="https://mahmoudgamal061.github.io/index.html?field1=mahmod+gamal&field2=mahmodjamal8010%40gmail.com&field3=555555&field4=Medical#"
 }
 // Define specialization
 let def = document.getElementById("def");
 def.onclick = function (){
-    location.href="#"
+    location.href="../tony/index.html"
 }
-// Medical obbreviations
+// Medical obbreviations6
 let obb = document.getElementById("obb");
 obb.onclick = function (){
     location.href="../mohy/web doctor2.html"
