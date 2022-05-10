@@ -16,6 +16,10 @@ html{
     margin: 0;
 }
 
+body{
+  overflow: hidden;
+}
+
 .container{
   display: flex;
   justify-content: center;
@@ -161,4 +165,41 @@ img{
 }
 .pass #show{
   display: none;
+}
+
+.end{
+  height: 100%;
+  width: 100%;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  z-index: -1;
+}
+.end .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 94vh;
+}
+
+.end .container h1{
+  color: white;
+  font-weight: 500;
+  margin-bottom: -35px;
+}
+
+.end .container h3{
+  color: var(--font-color);
+  font-weight: 600;
+  margin-top: 65px;
+}
+.end .container i {
+  color: var(--font-color);
+  font-size: 100px;
 }

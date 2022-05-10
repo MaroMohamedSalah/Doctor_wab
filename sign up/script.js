@@ -111,3 +111,21 @@ cpass.onblur = function(){
 //         console.log("clicked 3 times")
 //     }
 // }
+
+let form = document.querySelector("form");
+let end = document.getElementById("end");
+let container = document.getElementById("end_c");
+form.onsubmit = function(){
+    end.style.opacity = '1'
+    end.style.zIndex = '1'
+    container.innerHTML = `
+    <i class="fa-solid fa-clipboard-check"></i>
+    <h1>Thank you for sign up<h1>
+    <h3>${fname.value} ${lname.value}</h3>
+    `
+    setTimeout(function () {
+        (window.location.href =
+        "../index.html"),
+        "_self";
+    }, 3000);
+}
