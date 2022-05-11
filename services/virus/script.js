@@ -7,7 +7,8 @@ covid.onmouseenter = function(){
     </h1>
     <h3>
     517 <span>Million</span>
-    </h3>`
+    </h3>
+    `
 }
 covid_img.onmouseleave = function(){
     covid_img.innerHTML = `<img src="../virus/image/planet-earth-as-a-coronavirus-epidemic-sick-vector-30569806.jpg" alt="">`

@@ -174,3 +174,74 @@ a{
 .icon2 img{
     border-radius: 13px;
 }
+.stay .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stay .container button{
+    position: absolute;
+    top: -161px;
+    width: 135px;
+    height: 44px;
+    right: 500px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.stay .container button:hover{
+    cursor: pointer;
+}
+
+#intro2{
+    height: 85vh;
+    background-image: url(https://cdn1.vectorstock.com/i/1000x1000/13/45/group-of-doctors-vector-15521345.jpg);
+    user-select: auto;
+    background-color: #000;
+    background-position: 50% 29%;
+    background-size: cover;
+    height: 60vh;
+    min-height: 337px;
+    -webkit-transition: background-image 3s;
+    transition: background-image 3s;
+    margin-top: -21px;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#icon2{
+    width: 213px;
+    height: 304px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.scard{
+    text-align: center;
+}
+.scard h1{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--socond-color);
+}
+.scard span{
+    color: var(--main-color);
+}
+.main2{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
